@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ef5c81af9d.js"></script>  
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <title>About Us</title>
+</head>
+<body>
+    <nav id="navbar">
+            <div class="container">
+                <p class="logo">KK Baking</p>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="current">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="photogallery.html">Photo Gallery</a></li>
+                    <li><a href="#">Get in Touch</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="box">
+            <img src="img/" class="box-img">
+            <h2>Veronika Kurekova & Jozef Kurek</h2>
+            <h4>Baking Champions of Waterford City</h4>
+            <p>We always had passion for baking.</p>
+            <p>So why not to make others happy with the result?</p>
+           
+        
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/jozef_and_veronika/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            </ul>
+        </div>
+
+</body>
+</html>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif; 
+    background:linear-gradient(180deg, lightpink 0%, white 100%);
+}
+
+
+#navbar .container{
+    padding:0;
+    margin:0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background:lightpink;
+   }
+
+#navbar .logo{
+    margin:10px;
+    padding:10px;
+    font-size:2.5rem;
+    font-family:'Parisienne';
+    font-weight:bold;
+}
+
+#navbar .nav{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+}
+
+#navbar a{ 
+    font-size:1rem;
+    text-transform:uppercase;
+    text-decoration:none;
+    display:block;
+    color:#333;
+    background-color:lightpink;
+    font-weight:bold;
+    margin-right:5px;
+    padding:10px 20px;
+    text-align:center;
+}
+
+#navbar a:hover{
+    background:lavenderblush;
+}
+
+
+.box{
+    width:600px;
+    background:rgba(0,0,0, 0.4);
+    padding:30px;
+    text-align:center;
+    margin:auto;
+    /*margin-top:5%;*/
+    color:#fff;
+}
+
+.box-img{
+    border-radius:20%;
+    width:400px;
+    height:400px;
+}
+
+.box h2{
+    font-size:40px;
+    letter-spacing:4px;
+    font-weight:bold;
+    color:pink;
+}
+
+.box h4{
+    font-size:30px;
+    letter-spacing:2px;
+    font-weight:100;
+}
+
+.box p{
+    text-align:center;
+    font-size:30px;
+    color:pink;
+    font-weight:bold;
+    margin:0;
+}
+
+.box li{
+    display:inline-block;
+    margin:6px;
+    list-style:none;
+}
+
+.box li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:60px;
+    transition:all ease-in-out 250ms;
+}
+
+.box li a:hover{
+    color:lightpink;
+}
+</style>

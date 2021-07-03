@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ef5c81af9d.js"></script>  
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/simplelightbox.min.css">
+    <title>About Us</title>
+</head>
+<body>
+    <nav id="navbar">
+            <div class="container">
+                <p class="logo">KK Baking</p>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="photogallery.html" class="current">Photo Gallery</a></li>
+                    <li><a href="#">Get in Touch</a></li>
+                </ul>
+            </div>
+        </nav>
+
+     <section class="photo-section">
+         <div class="gallery">
+             <a href="img/chocolatecake.jpeg">
+            <img src="img/chocolatecake.jpeg">
+            </a>
+            <a href="img/cupcake.jpeg">
+            <img src="img/cupcake.jpeg">
+            </a>
+            <a href="img/cupcake2.jpeg">
+            <img src="img/cupcake2.jpeg">
+            </a>
+            <a href="img/nutellacake.jpeg">
+            <img src="img/nutellacake.jpeg">
+            </a>
+            <a href="img/rosecupcakejpeg.jpeg">
+            <img src="img/rosecupcakejpeg.jpeg">
+            </a>
+            <a href="img/unicorncake.jpeg">
+            <img src="img/unicorncake.jpeg">
+            </a>
+            <a href="img/pinkcake3.jpeg">
+            <img src="img/pinkcake3.jpeg">
+            </a>
+            <a href="img/pinkcake2.jpeg">
+            <img src="img/pinkcake2.jpeg">
+            </a>
+         </div>
+     </section>
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/simple-lightbox.min.js"></script>
+<script>
+   $(function(){
+    const $gallery = $('.gallery a').simpleLightbox();
+});
+</script>
+</body>
+</html>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif; 
+    /*background-image:url('./img/cakequote.jpeg');
+    background-position:center;
+    background-size:cover;
+    height:100vh;
+    z-index:-1;*/
+}
+
+#navbar .container{
+    padding:0;
+    margin:0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background:lightpink;
+   }
+
+#navbar .logo{
+    margin:10px;
+    padding:10px;
+    font-size:2.5rem;
+    font-family:'Parisienne';
+    font-weight:bold;
+}
+
+#navbar .nav{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+}
+
+#navbar a{ 
+    font-size:1rem;
+    text-transform:uppercase;
+    text-decoration:none;
+    display:block;
+    color:#333;
+    background-color:lightpink;
+    font-weight:bold;
+    margin-right:5px;
+    padding:10px 20px;
+    text-align:center;
+}
+
+#navbar a:hover{
+    background:lavenderblush;
+}
+
+.photo-secton .gallery a, .photo-section .gallery img{
+   width:100%;
+   height:100%;
+}
+.photo-section .gallery{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+
+
+</style>
